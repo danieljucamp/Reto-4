@@ -10,25 +10,21 @@ height: 80px;
 background-color: darkblue;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
-}
-
-main {
-    background-color: wheat;
-    width: auto;
-    height: 1000px;
 }
 
 header h1 {
     color: white;
-    margin-left: 20px;
+    margin-left: 50px;
     flex-grow: 2
 }
 
 nav {
-    display: inline-block;
-    min-width: 500px;
+    display: inline-flex;
+    min-width: 430px;
+    background-color: violet;
+    position: relative;
 }
 
 header a {
@@ -37,8 +33,20 @@ header a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.equipo {
+    background-color: violet;
+    min-width: 430px;
+    position: relative;
+}
+
 .equipo h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    background-color: wheat;
+    width: auto;
+    height: 1000px;
 }
 
 .sct {
@@ -60,14 +68,28 @@ header a {
     justify-items: center;
     min-width: 400px;
     margin-bottom: 70px;
-    top: 200px;
+    top: 300px;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.text h3 {
+    font-size: 1.8rem;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
 }
 
 .image {
@@ -78,4 +100,13 @@ header a {
     /* background-color: violet; */
     min-width: 200px;
 
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
 }
